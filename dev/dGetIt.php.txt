@@ -1,0 +1,449 @@
+//CALL FROM S10.php
+<?php 
+	//FUNCTION FILE CALL
+	include "dGetIt.php";
+	
+	//FUNCTION CALLS
+	dGetIt("a1_b1_c1");
+	dGetIt("a1_b1_c2");
+	dGetIt("a1_b1_c3");
+	dGetIt("a1_b1_c4");
+	dGetIt("a1_b1_c5");
+	dGetIt("a1_b1_c6");
+	dGetIt("a1_b1_c7");
+	dGetIt("a1_b1_c8");
+	dGetIt("a1_b1_c9");
+	dGetIt("a1_b1_c10");
+	dGetIt("a1_b1_c11");
+	dGetIt("a1_b1_c12");
+	
+?>
+					
+//FUNCTION
+function dGetIt($id)
+{
+	//Do stuff
+	
+	return $responseText;
+}
+
+//EXAMPLE FOR dGetIt("a1_b1_c1")
+
+$responseText= '$("#dgetit_a1_b1_c1").click(function()
+{
+	//LOCAL COLORS//MAIN
+	$(".a1_b1_c1_main").removeClass("got_it");
+	$(".a1_b1_c1_main").addClass("didnt_get_it");
+						
+	//LOCAL COLORS//BUTTONS
+	$("#dgetit_a1_b1_c1").css("background-color","red");
+	$("#gotit_a1_b1_c1").css("background-color","#a9014b");
+	
+	//UPDATING PART PIC
+	$("#b0_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+	
+	//UPDATING SUBJECT PIC
+	$("#td_pic_01").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+	
+	//UPDATING NEW COLOR//A1_B1_C1//OUTPUT 38_1
+	$.post("metal_6_f_videos.php",
+	{
+		subject_1:"a1",
+		question_1:"Q1",
+		value_1:"2",
+	},
+	function(data, status)
+	{
+		if(data == 'OK');
+		{
+			alert('העדכון בוצע בהצלחה.');
+		}
+	});//END OF UPDATING NEW COLOR
+});//END OF dgetit_a1 CLICK';
+				
+	
+//NEEDED ALL OUTPUT
+				$("#dgetit_a1_b1_c1").click(function()
+				{
+					//LOCAL COLORS//MAIN
+					$(".a1_b1_c1_main").removeClass("got_it");
+					$(".a1_b1_c1_main").addClass("didnt_get_it");
+										
+					//LOCAL COLORS//BUTTONS
+					$("#dgetit_a1_b1_c1").css("background-color","red");
+					$("#gotit_a1_b1_c1").css("background-color","#a9014b");
+					
+					//UPDATING PART PIC
+					$("#b0_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+					
+					//UPDATING SUBJECT PIC
+					$("#td_pic_01").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+					
+					//UPDATING NEW COLOR//A1_B1_C1//OUTPUT 38_1
+					$.post("metal_6_f_videos.php",
+					{
+						subject_1:"a1",
+						question_1:"Q1",
+						value_1:"2",
+					},
+					function(data, status)
+					{
+						if(data == 'OK');
+						{
+							alert('העדכון בוצע בהצלחה.');
+						}
+					});//END OF UPDATING NEW COLOR
+				});//END OF dgetit_a1 CLICK
+				
+				$("#dgetit_a1_b1_c2").click(function()
+				{
+					//LOCAL COLORS//MAIN
+					$(".a1_b1_c2_main").removeClass("got_it");
+					$(".a1_b1_c2_main").addClass("didnt_get_it");
+										
+					//LOCAL COLORS//BUTTONS
+					$("#dgetit_a1_b1_c2").css("background-color","red");
+					$("#gotit_a1_b1_c2").css("background-color","#a9014b");
+					
+					//UPDATING PART PIC
+					$("#b0_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+					
+					//UPDATING SUBJECT PIC
+					$("#td_pic_02").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+										
+					//UPDATING NEW COLOR//A1_B1_C1//OUTPUT 38_2
+					$.post("metal_6_f_videos.php",
+					{
+						subject_1:"a1",
+						question_1:"Q2",
+						value_1:"2",
+					},
+					function(data, status)
+					{
+						if(data == 'OK');
+						{
+							alert('העדכון בוצע בהצלחה.');
+						}
+					});//END OF UPDATING NEW COLOR
+				});//END OF dgetit_a1 CLICK
+				
+				$("#dgetit_a1_b1_c3").click(function()
+				{
+					//LOCAL COLORS//MAIN
+					$(".a1_b1_c3_main").removeClass("got_it");
+					$(".a1_b1_c3_main").addClass("didnt_get_it");
+										
+					//LOCAL COLORS//BUTTONS
+					$("#dgetit_a1_b1_c3").css("background-color","red");
+					$("#gotit_a1_b1_c3").css("background-color","#a9014b");
+					
+					//UPDATING PART PIC
+					$("#b01_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+					
+					//UPDATING SUBJECT PIC
+					$("#td_pic_03").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+					
+					//UPDATING NEW COLOR//A1_B1_C3//OUTPUT 38_3 
+					$.post("metal_6_f_videos.php",
+					{
+						subject_1:"a1",
+						question_1:"Q3",
+						value_1:"2",
+					},
+					function(data, status)
+					{
+						if(data == 'OK');
+						{
+							alert('העדכון בוצע בהצלחה.');
+						}
+					});//END OF UPDATING NEW COLOR
+				});//END OF dgetit_a1 CLICK
+				
+				$("#dgetit_a1_b1_c4").click(function()
+				{
+					//LOCAL COLORS//MAIN
+					$(".a1_b1_c4_main").removeClass("got_it");
+					$(".a1_b1_c4_main").addClass("didnt_get_it");
+										
+					//LOCAL COLORS//BUTTONS
+					$("#dgetit_a1_b1_c4").css("background-color","red");
+					$("#gotit_a1_b1_c4").css("background-color","#a9014b");
+					
+					//UPDATING PART PIC
+					$("#b01_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+					
+					//UPDATING SUBJECT PIC
+					$("#td_pic_04").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+					
+					//UPDATING NEW COLOR//A1_B1_C4//OUTPUT 38_4
+					$.post("metal_6_f_videos.php",
+					{
+						subject_1:"a1",
+						question_1:"Q4",
+						value_1:"2",
+					},
+					function(data, status)
+					{
+						if(data == 'OK');
+						{
+							alert('העדכון בוצע בהצלחה.');
+						}
+					});//END OF UPDATING NEW COLOR
+				});//END OF dgetit_a1 CLICK
+				
+				$("#dgetit_a1_b1_c5").click(function()
+				{
+					//LOCAL COLORS//MAIN
+					$(".a1_b1_c5_main").removeClass("got_it");
+					$(".a1_b1_c5_main").addClass("didnt_get_it");
+										
+					//LOCAL COLORS//BUTTONS
+					$("#dgetit_a1_b1_c5").css("background-color","red");
+					$("#gotit_a1_b1_c5").css("background-color","#a9014b");
+					
+					//UPDATING PART PIC
+					$("#b02_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+					
+					//UPDATING SUBJECT PIC
+					$("#td_pic_05").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+					
+					//UPDATING NEW COLOR//A1_B1_C5//OUTPUT 38_5 
+					$.post("metal_6_f_videos.php",
+					{
+						subject_1:"a1",
+						question_1:"Q5",
+						value_1:"2",
+					},
+					function(data, status)
+					{
+						if(data == 'OK');
+						{
+							alert('העדכון בוצע בהצלחה.');
+						}
+					});//END OF UPDATING NEW COLOR
+				});//END OF dgetit_a1 CLICK
+				
+				$("#dgetit_a1_b1_c6").click(function()
+				{
+					//LOCAL COLORS//MAIN
+					$(".a1_b1_c6_main").removeClass("got_it");
+					$(".a1_b1_c6_main").addClass("didnt_get_it");
+										
+					//LOCAL COLORS//BUTTONS
+					$("#dgetit_a1_b1_c6").css("background-color","red");
+					$("#gotit_a1_b1_c6").css("background-color","#a9014b");
+					
+					//UPDATING PART PIC
+					$("#b02_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+					
+					//UPDATING SUBJECT PIC
+					$("#td_pic_06").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+									
+					//UPDATING NEW COLOR//A1_B1_C6//OUTPUT 38_6
+					$.post("metal_6_f_videos.php",
+					{
+						subject_1:"a1",
+						question_1:"Q6",
+						value_1:"2",
+					},
+					function(data, status)
+					{
+						if(data == 'OK');
+						{
+							alert('העדכון בוצע בהצלחה.');
+						}
+					});//END OF UPDATING NEW COLOR
+				});//END OF dgetit_a1 CLICK
+				
+				$("#dgetit_a1_b1_c7").click(function()
+				{
+					//LOCAL COLORS//MAIN
+					$(".a1_b1_c7_main").removeClass("got_it");
+					$(".a1_b1_c7_main").addClass("didnt_get_it");
+										
+					//LOCAL COLORS//BUTTONS
+					$("#dgetit_a1_b1_c7").css("background-color","red");
+					$("#gotit_a1_b1_c7").css("background-color","#a9014b");
+					
+					//UPDATING PART PIC
+					$("#b02_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+					
+					//UPDATING SUBJECT PIC
+					$("#td_pic_07").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+										
+					//UPDATING NEW COLOR//A1_B1_C7//OUTPUT 38_7
+					$.post("metal_6_f_videos.php",
+					{
+						subject_1:"a1",
+						question_1:"Q7",
+						value_1:"2",
+					},
+					function(data, status)
+					{
+						if(data == 'OK');
+						{
+							alert('העדכון בוצע בהצלחה.');
+						}
+					});//END OF UPDATING NEW COLOR
+				});//END OF dgetit_a1 CLICK
+				
+				$("#dgetit_a1_b1_c8").click(function()
+				{
+					//LOCAL COLORS//MAIN
+					$(".a1_b1_c8_main").removeClass("got_it");
+					$(".a1_b1_c8_main").addClass("didnt_get_it");
+										
+					//LOCAL COLORS//BUTTONS
+					$("#dgetit_a1_b1_c8").css("background-color","red");
+					$("#gotit_a1_b1_c8").css("background-color","#a9014b");
+					
+					//UPDATING PART PIC
+					$("#b02_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+					
+					//UPDATING SUBJECT PIC
+					$("#td_pic_08").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+										
+					//UPDATING NEW COLOR//A1_B1_C8//OUTPUT 38_8
+					$.post("metal_6_f_videos.php",
+					{
+						subject_1:"a1",
+						question_1:"Q8",
+						value_1:"2",
+					},
+					function(data, status)
+					{
+						if(data == 'OK');
+						{
+							alert('העדכון בוצע בהצלחה.');
+						}
+					});//END OF UPDATING NEW COLOR
+				});//END OF dgetit_a1 CLICK
+				
+				$("#dgetit_a1_b1_c9").click(function()
+				{
+					//LOCAL COLORS//MAIN
+					$(".a1_b1_c9_main").removeClass("got_it");
+					$(".a1_b1_c9_main").addClass("didnt_get_it");
+										
+					//LOCAL COLORS//BUTTONS
+					$("#dgetit_a1_b1_c9").css("background-color","red");
+					$("#gotit_a1_b1_c9").css("background-color","#a9014b");
+					
+					//UPDATING PART PIC
+					$("#b02_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+					
+					//UPDATING SUBJECT PIC
+					$("#td_pic_09").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+					
+										
+					//UPDATING NEW COLOR//A1_B1_C9//OUTPUT 38_9
+					$.post("metal_6_f_videos.php",
+					{
+						subject_1:"a1",
+						question_1:"Q9",
+						value_1:"2",
+					},
+					function(data, status)
+					{
+						if(data == 'OK');
+						{
+							alert('העדכון בוצע בהצלחה.');
+						}
+					});//END OF UPDATING NEW COLOR
+				});//END OF dgetit_a1 CLICK
+				
+				$("#dgetit_a1_b1_c10").click(function()
+				{
+					//LOCAL COLORS//MAIN
+					$(".a1_b1_c10_main").removeClass("got_it");
+					$(".a1_b1_c10_main").addClass("didnt_get_it");
+										
+					//LOCAL COLORS//BUTTONS
+					$("#dgetit_a1_b1_c10").css("background-color","red");
+					$("#gotit_a1_b1_c10").css("background-color","#a9014b");
+					
+					//UPDATING PART PIC
+					$("#b02_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+					
+					//UPDATING SUBJECT PIC
+					$("#td_pic_10").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+					
+					//UPDATING NEW COLOR//A1_B1_C10//OUTPUT 38_10
+					$.post("metal_6_f_videos.php",
+					{
+						subject_1:"a1",
+						question_1:"Q10",
+						value_1:"2",
+					},
+					function(data, status)
+					{
+						if(data == 'OK');
+						{
+							alert('העדכון בוצע בהצלחה.');
+						}
+					});//END OF UPDATING NEW COLOR
+				});//END OF dgetit_a1 CLICK
+				
+				$("#dgetit_a1_b1_c11").click(function()
+				{
+					//LOCAL COLORS//MAIN
+					$(".a1_b1_c11_main").removeClass("got_it");
+					$(".a1_b1_c11_main").addClass("didnt_get_it");
+										
+					//LOCAL COLORS//BUTTONS
+					$("#dgetit_a1_b1_c11").css("background-color","red");
+					$("#gotit_a1_b1_c11").css("background-color","#a9014b");
+					
+					//UPDATING PART PIC
+					$("#b02_1").html('<img class="output" src="../img/table/05.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+					
+					//UPDATING SUBJECT PIC
+					$("#td_pic_11").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+					
+					//UPDATING NEW COLOR//A1_B1_C11//OUTPUT 38_11
+					$.post("metal_6_f_videos.php",
+					{
+						subject_1:"a1",
+						question_1:"Q11",
+						value_1:"2",
+					},
+	function(data, status)
+	{
+		if(data == 'OK');
+		{
+			alert('העדכון בוצע בהצלחה.');
+		}
+	});//END OF UPDATING NEW COLOR
+});//END OF dgetit_a1 CLICK
+
+$("#dgetit_a1_b1_c12").click(function()
+{
+	//LOCAL COLORS//MAIN
+	$(".a1_b1_c12_main").removeClass("got_it");
+	$(".a1_b1_c12_main").addClass("didnt_get_it");
+						
+	//LOCAL COLORS//BUTTONS
+	$("#dgetit_a1_b1_c12").css("background-color","red");
+	$("#gotit_a1_b1_c12").css("background-color","#a9014b");
+	
+	//UPDATING PART PIC
+	$("#b02_1").html('<img class="output" src="../img/table/06.jpg" style="margin-bottom:0px;margin-top:0px;width:100%;">');
+	
+	//UPDATING SUBJECT PIC
+	$("#td_pic_12").html('<img class="output" src="../img/login/thumbnails/mail.jpg" style="width:100%;">');
+	
+	//UPDATING NEW COLOR//A1_B1_C12//OUTPUT 38_12
+	$.post("metal_6_f_videos.php",
+	{
+		subject_1:"a1",
+		question_1:"Q12",
+		value_1:"2",
+	},
+	function(data, status)
+	{
+		if(data == 'OK');
+		{
+			alert('העדכון בוצע בהצלחה.');
+		}
+	});//END OF UPDATING NEW COLOR
+});//END OF dgetit_a1 CLICK

@@ -1,0 +1,164 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- TITLE -->
+		<title itemprop="name">Tranzila</title>
+		
+		<!-- META TAGS -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" itemprop="description" content="Tranzila, Israels' best credit card clearing solutions for businesses, including Bank records clearing via Masav, Paypal payment solution and digitally signed invoicing services" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		
+		<!-- LINK -->
+		<link rel="canonical" href="http://www.tranzila.com/" itemprop="url" />
+		
+		<!-- SCRIPT FILES -->
+		<script src="/Tranzila_files/jquery.js"></script>
+		<script src="/Tranzila_files/paypage.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/Tranzila_files/bootstrap.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/Tranzila_files/swiperead.js" defer="defer"></script>
+		<script type="text/javascript" charset="utf-8" src="/Tranzila_files/bootstrap-select.js"></script>
+		
+		<!-- CSS -->
+		<link href="/Tranzila_files/bootstrap-select.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/Tranzila_files/tranzila_ltr.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/Tranzila_files/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<div class="container">
+				<div class="content_container">
+                    <!-- HEADER -->
+					<div id="header" class="content_payment">
+                        <div class="header">
+                            <div class="header_image">
+								<img src="/Tranzila_files/logo.png" alt="Logo" />
+							</div>
+                        </div>
+                    </div>
+                    
+					<!-- FORM -->
+					<form action="https://direct.tranzila.com/ttxexplainit/iframenew.php" class="round" method="post" id="itranpayform" autocomplete="off">
+                        <input type="hidden" id="sum" name="sum" value="40" />
+						<input type="hidden" id="supplier" name="supplier" value="ttxexplainit" />
+						<input type="hidden" id="currency" name="currency" />
+						
+						<div id="payment_data_section" class="payment_data">
+                            <div class="payment_section">
+                                <div class="data_field high_width">
+                                    <div class="data_field_input">
+                                        <input id="ccno" name="ccno" class="data_input" placeholder="Card Number" type="tel" maxlength="21" onblur="validateCardNumber(this)" onkeypress="addSpaceOnCard(event)" onkeyup="displayPlaceholder(this);" />
+										<span class="data_icon"></span>
+                                        <span id="global_card"></span>
+                                    </div>
+                                    
+									<div class="data_error">Invalid Card Number</div>
+                                </div>
+                                    
+								<div class="data_field small_width">
+                                    
+									<div class="data_placeholder"></div>
+                                    
+									<div class="data_field_select">
+                                        <select id="expyear" name="expyear" class="select_input" onchange="checkEmptyText(this);displaySelectPlaceholder(this);checkValidDate(this);">
+											<option value="00" selected="selected" hidden="">Exp Year</option>
+										</select>
+										
+										<select id="expmonth" name="expmonth" class="select_input" onchange="checkEmptyText(this);checkValidDate(this);displaySelectPlaceholder(this);">
+											<option value="00" selected="selected" hidden="">Exp Month</option><option value="01">01</option>
+											<option value="02">02</option>
+											<option value="03">03</option>
+											<option value="04">04</option>
+											<option value="05">05</option>
+											<option value="06">06</option>
+											<option value="07">07</option>
+											<option value="08">08</option>
+											<option value="09">09</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+									</div>
+                                    
+									<div class="data_error">Invalid validity</div>
+                                </div>
+
+                                <div class="data_field medium_width no_right">
+                                    <div class="data_field_input">                                            <input id="mycvv" name="mycvv" class="data_input" type="tel" maxlength="4" placeholder="Security Code" onblur="checkEmptyText(this);  validateDigits(this);" onkeyup="displayPlaceholder(this); validateDigits(this);" /><span class="data_icon"></span>
+                                        <span type="button" class="question_icon" id="myBtn" onclick="modalContent();"></span>
+                                        
+										<div id="myModal" class="modal">
+                                        	<div class="modal-x">
+												<span class="close">X</span>                                        
+												<div class="modal-content">
+													<p>For Mastercard/Visa - 3 digits on the back of the card,&#13; right hand side of the signature box.&#13; For American Express - 4 digits on the front of the card,&#13; right and above card number</p>
+												</div>
+											</div>
+                                        </div>                                           
+                                    </div>
+                                    
+									<div class="data_error">Invalid CVV</div>
+                                </div>
+								
+								<div class="data_field medium_width no_left">
+                                    <div class="data_field_input">
+										<input id="myid" name="myid" class="data_input" placeholder="ID" type="tel" maxlength="9" onblur="checkEmptyText(this); validateMyId(this);" onkeyup="displayPlaceholder(this);validateMyId(this);" /><span class="data_icon"></span>
+                                    </div>
+                                    
+									<div class="data_error">Invalid social security number</div>
+                                </div>
+
+                                <div id="sumli"></div>
+
+
+                            </div>
+                        </div>
+
+						<div id="total" class="payment_total_text">
+							<div class="payment_total_text_padding">
+								<div class="total_text">
+									<div class="total_value_text total_value">Total</div>
+									<div class="total_value_val total_value">
+										<span>
+											<input type="hidden" id="sum_open_sum" />
+											<span id="currchar">₪</span> 
+											<span id="sumval">20</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="payment_total_button">
+							<div id="send" class="payment_total_purchase">
+								<button id="submitbtn" type="button">Process</button>
+								<input type="submit" value="Send Request">
+							</div>
+						</div>
+					
+						<input type="hidden" id="lang" name="lang" value="us" />
+						<input type="hidden" id="o_cred_type" name="o_cred_type" value="" />
+						<input type="hidden" id="o_tranmode" name="o_tranmode" value="" />
+						<input type="hidden" id="o_npay" name="o_npay" value="" />
+					</form>
+				</div>
+				
+				<!-- FOOTER -->
+				<div id="footer" class="footer_container">
+                    <div class="container">
+                        <div class="footer_top">
+                            <div class="footer_top_img">
+                              <img class="footer_top_small" src="/Tranzila_files/mcafee.png" alt="McAfee SECURE site" /><img alt="pci" class="footer_top_small" src="/Tranzila_files/pci.png" /><img class="footer_top_small" src="/Tranzila_files/trusted-site-seal.png" alt="trusted-site-seal" /></div>
+                        </div>
+
+                        <div class="footer_bottom">
+                            <div class="footer_bottom_text">Tranzila © <a href="http://www.tranzila.com/">Online Payments by Tranzila</a> - All Rights Reserved</div>
+                        </div>
+                    </div><!-- CONTAINER_02 -->
+                </div><!-- FOOTER -->
+			</div><!-- CONTAINER -->
+        </div><!-- WRAPPER -->
+	</body>
+</html>

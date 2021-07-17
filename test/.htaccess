@@ -1,0 +1,4 @@
+AuthName "t"
+AuthUserFile "/home/elad189g/.htpasswds/public_html/xo/test/passwd"
+AuthType Basic
+require valid-user
